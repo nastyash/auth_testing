@@ -1,4 +1,4 @@
-package authc;
+package cucumber;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
@@ -9,7 +9,7 @@ import cucumber.api.java.en.When;
 /**
  * Created by anastasiaknyazeva on 2/5/16.
  */
-public class RoleStefdefs {
+public class RoleStepdefs {
 
     @When("^we check for role X$")
     public void weCheckForRoleX() throws Throwable {

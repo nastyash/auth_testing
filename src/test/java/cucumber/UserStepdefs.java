@@ -1,4 +1,4 @@
-package authc;
+package cucumber;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;

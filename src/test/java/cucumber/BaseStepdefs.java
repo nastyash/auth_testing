@@ -1,4 +1,4 @@
-package authc;
+package cucumber;
 
 import org.apache.shiro.subject.Subject;
 

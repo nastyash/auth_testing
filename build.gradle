@@ -1,9 +1,9 @@
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'application'
-apply plugin: "groovy"
+apply plugin: 'groovy'
 
-configurations {
+/*configurations {
     cucumberRuntime {
         extendsFrom testRuntime
     }
@@ -18,16 +18,15 @@ task cucumber() {
             args = ['--plugin', 'pretty', '--glue', 'gradle.cucumber', 'src/test/resources']
         }
     }
-}
+}*/
 
 dependencies {
     compile 'org.slf4j:slf4j-simple:1.7.10'
     compile 'org.apache.shiro:shiro-core:1.2.3'
-    compile 'org.codehaus.groovy:groovy-all:2.4.4'
-    // mandatory dependencies for using Spock
-    compile "org.codehaus.groovy:groovy-all:2.4.1"
-    testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+    compile 'org.codehaus.groovy:groovy-all:2.4.1'
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
     testCompile 'info.cukes:cucumber-java:1.2.4'
+    testCompile 'info.cukes:cucumber-groovy:1.2.4'
     testCompile 'info.cukes:cucumber-junit:1.2.4'
 
     testCompile 'junit:junit:4.11'
@@ -38,4 +37,4 @@ repositories {
     mavenCentral()
 }
 
-mainClassName = "Tutorial"
+mainClassName = 'Tutorial'
